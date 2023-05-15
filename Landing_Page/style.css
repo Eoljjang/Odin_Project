@@ -5,12 +5,12 @@ body {
     padding: 0;
 }
 
-/* 1) Header stuff */
+/* 1) Header */
 .header {
     display: flex;
     flex-direction: column;
     background-color: #1F2937;
-    padding: 20px 200px 20px 200px;
+    padding: 30px 200px 70px 200px;
 
 }
 .nav {
@@ -83,6 +83,38 @@ body {
     color: #E5E7EB;
     background: gray;
     padding: 90px 100px;
+}
+
+/* 2) Information */
+.information{
+    display: flex;
+    flex: 1; /* So the room it takes up is dynamic. */
+    flex-direction: column;
+    text-align: center;
+    margin-top: 24px;
+    
+}
+
+.information .items {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    gap: 60px; /* Can use gap since its a flexbox, and its items are flex items. */
+    margin-top: 24px;
+    
+}
+
+.information .item{
+    color: grey;
+    width: 150px;
+
+}
+
+.information img{
+    height: 150px;
+    width: 150px;
+    border: 5px solid blue;
+    border-radius: 10px;
 }
 
 
