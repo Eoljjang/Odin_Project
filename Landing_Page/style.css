@@ -3,6 +3,7 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
+    flex-shrink: 1;
 }
 
 /* 1) Header */
@@ -83,6 +84,7 @@ body {
     color: #E5E7EB;
     background: gray;
     padding: 90px 100px;
+    flex-shrink: 0;
 }
 
 /* 2) Information */
