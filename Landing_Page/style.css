@@ -92,6 +92,7 @@ body {
     flex-direction: column;
     text-align: center;
     margin-top: 24px;
+    margin-bottom: 24px;
     
 }
 
@@ -117,4 +118,26 @@ body {
     border-radius: 10px;
 }
 
+/* 3) Quote */
+.quote{
+    display:flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    margin-top: 48px;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+.quote blockquote{
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight:lighter;
+    padding: 30px 150px 30px 150px;
+}
+.quote blockquote cite {
+    display: block;
+    text-align: right;
+}
 
