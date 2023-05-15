@@ -141,3 +141,50 @@ body {
     text-align: right;
 }
 
+/* 4) Sign-up Section */
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3882F6;
+    margin: 48px 350px;
+    border-radius: 8px;
+    
+}
+
+.signup .sellingPoints{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 36px 18px;
+    
+}
+.signup .main{
+    font-weight: bolder;
+    font-size: 24px;
+    color: #F9FAF8;
+}
+.signup .second{
+    color: #E5E7EB;
+    font-style: italic;
+}
+
+.signup button{
+    background-color: #3882F6;
+    width: fit-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer; /* Clickable */
+    border: 3px solid #F9FAF8; /* Removes the ugly default shadow on the button */
+    color: #F9FAF8;
+}
+
+/* 5) Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+}
