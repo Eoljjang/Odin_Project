@@ -8,7 +8,8 @@
 </head>
 <body>
 
-
+  <!-- When you press a key on the keyboard, there's a certain keycode associated with it. For example: Pressing 'A' has keycode of 65-->
+  <!-- "Data-key" stores a "key" value that can be accessed later. Used for identifying. It is an attribute. -->
   <div class="keys">
     <div data-key="65" class="key">
       <kbd>A</kbd>
@@ -48,6 +49,7 @@
     </div>
   </div>
 
+  <!-- "data-key" is like a key:value pair. When I press the data-key 65: it'll search for the sound "clap" and execute accordingly. Remember "data-key" is an attribute. -->
   <audio data-key="65" src="sounds/clap.wav"></audio>
   <audio data-key="83" src="sounds/hihat.wav"></audio>
   <audio data-key="68" src="sounds/kick.wav"></audio>
@@ -59,6 +61,18 @@
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
 <script>
+  // Listen for key event. We are listening for it inside the WINDOW.
+
+  // Give it an event listener, when the key is pressed it passes that event into "function".
+  window.addEventListener('keydown', function(e){
+    // Search to see if we have an audio associated with that keypress.
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // Note that this format string uses apostrophe on the outside, NOT single quote.
+    console.log(audio);
+
+    if (!audio) return; // Stops the function from running if there's no audio for a given keypress (saves resources).
+    audio.play(); // Play the sound.
+
+  });
 
 </script>
 
