@@ -60,20 +60,34 @@
   <audio data-key="75" src="sounds/tom.wav"></audio>
   <audio data-key="76" src="sounds/tink.wav"></audio>
 
-<script>
-  // Listen for key event. We are listening for it inside the WINDOW.
-
-  // Give it an event listener, when the key is pressed it passes that event into "function".
-  window.addEventListener('keydown', function(e){
+<script> 
+  function playSound(e){
     // Search to see if we have an audio associated with that keypress.
     const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`); // Note that this format string uses apostrophe on the outside, NOT single quote.
+    const key = document.querySelector(`.key[data-key="${e.keyCode}"]`); // We're returning the div that's being "clicked".
+
+    // Testing
     console.log(audio);
+    console.log(key);
 
+    // Run the function
     if (!audio) return; // Stops the function from running if there's no audio for a given keypress (saves resources).
+    audio.currentTime = 0; // Rewind to the start (this allows for "spamming" the key to make the sound). Otherwise, the function is like: "Well why should I play the sound again?"
     audio.play(); // Play the sound.
+    key.classList.add('playing'); // Give the div the state "playing" -> CSS styling TRANSITIONS. (Don't set a timer to time out this state).
+  }
 
-  });
+  function removeTransition(e) {
+    if (e.propertyName !== 'transform') return; // Skip it if the div isn't already transformed.
+    this.classList.remove('playing'); // "This" is the div / element you've clicked.
+  }
 
+  // This is the "transition end" phase of the click.
+  const keys = document.querySelectorAll('.key'); // Get all elements on screen.
+  keys.forEach(key => key.addEventListener('transitionend', removeTransition)); // Give each key an event listener. When a transition ends call the removeTransition function. (IE: it'll stop being in "playing" state).
+
+  // Listen for key event in the WINDOW. Give it an event listener, when the key is pressed it passes that event into "function".
+  window.addEventListener('keydown', playSound);
 </script>
 
 
