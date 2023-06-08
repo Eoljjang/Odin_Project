@@ -27,6 +27,14 @@ body {
     font-size: 24px;
 }
 
+#round_result{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size:24px;
+    margin: 12px;
+}
+
 .scores {
     display:flex;
     flex-direction: column;
@@ -35,7 +43,7 @@ body {
 
 }
 
-#result {
+#final_result {
     text-align: center;
     font-size: 34px;
 }
