@@ -75,9 +75,9 @@ function playRound(p_move, c_move){
 
 function main(){
     // Plays the game 5 times.
-    for (let i = 0; i < 5; i++){
-        getPlayerChoice();
-    }
+    // for (let i = 0; i < 5; i++){
+    //     getPlayerChoice();
+    // }
     console.log("You had", results, "wins.");
 }
 
