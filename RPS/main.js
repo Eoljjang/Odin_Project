@@ -1,6 +1,9 @@
 // Global
 const choices = Array("rock", "paper", "scissors");
 let results = 0;
+let results_CPU = 0;
+const CPU_points = document.getElementById("CPU");
+const Player_points = document.getElementById("User");
 
 function getPlayerChoice(){
     let p_move = prompt("Enter a move");
@@ -33,16 +36,20 @@ function getComputerChoice(){
 function playRound(p_move, c_move){
     console.log("You chose:", p_move);
     console.log("Computer chose:", c_move);
+
     if (p_move === "rock"){
         if (c_move === "rock"){
             console.log("Tie!");
         }
         else if (c_move === "paper"){
             console.log("You lose :(");
+            results_CPU += 1;
+            CPU_points.innerHTML = "Computer: " + results_CPU;
         }
         else if (c_move === "scissors"){
             console.log("You win :)");
             results += 1;
+            Player_points.innerHTML = "You: " + results;
         }
     }
 
@@ -52,10 +59,13 @@ function playRound(p_move, c_move){
         }
         else if (c_move === "scissors"){
             console.log("You lose :(");
+            results_CPU += 1;
+            CPU_points.innerHTML = "Computer: " + results_CPU;
         }
         else if (c_move === "rock"){
             console.log("You win :)");
             results += 1;
+            Player_points.innerHTML = "You: " + results;
         }
     }
 
@@ -65,19 +75,41 @@ function playRound(p_move, c_move){
         }
         else if (c_move === "rock"){
             console.log("You lose :(");
+            results_CPU += 1;
+            CPU_points.innerHTML = "Computer: " + results_CPU;
         }
         else if (c_move === "paper"){
             console.log("You win :)");
             results += 1;
+            Player_points.innerHTML = "You: " + results;
         }
     }
+    if (results === 5){
+        document.getElementById("result").textContent="You won! Yahoo";
+    }
+    else if (results_CPU === 5){
+        document.getElementById("result").textContent="CPU won :(";
+    }
+    return;
 }
 
 function main(){
-    // Plays the game 5 times.
-    // for (let i = 0; i < 5; i++){
-    //     getPlayerChoice();
+    // Set listeners for all the buttons
+    document.getElementById("rock").setAttribute("onClick", "javascript: playRound('rock', getComputerChoice());");
+    document.getElementById("paper").setAttribute("onClick", "javascript: playRound('paper', getComputerChoice());");
+    document.getElementById("scissors").setAttribute("onClick", "javascript: playRound('scissors', getComputerChoice());");
+
+
+
+
+
+
+    // Playing Game
+    // while (results < 5 || results_CPU < 5){
+    //     playRound();
     // }
+    // Once one person wins, check who won
+
     console.log("You had", results, "wins.");
 }
 

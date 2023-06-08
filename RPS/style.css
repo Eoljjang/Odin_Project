@@ -19,7 +19,7 @@ body {
     margin: 12px;
 }
 
-.move {
+#rock, #paper, #scissors {
     padding: 25px 75px 25px 75px;
     cursor: pointer; /* Clickable */
     background-color: rgb(127, 234, 255);
@@ -35,8 +35,8 @@ body {
 
 }
 
-.result {
+#result {
     text-align: center;
-    font-size: 32px;
+    font-size: 34px;
 }
 
