@@ -1,3 +1,9 @@
+.body{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display:flex;
 }
@@ -5,4 +11,9 @@
 .row {
     display: flex;
     flex-direction: column;
+}
+
+.cell{
+    border: 1px solid black;
+    padding: 8px;
 }
