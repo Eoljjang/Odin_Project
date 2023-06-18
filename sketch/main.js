@@ -1,8 +1,6 @@
 // Global Variables
 const body = document.body;
 const container = document.querySelector(".container");
-const row = document.querySelector(".row");
-const column = document.querySelector(".column");
 
 // Function that creates the divs. Default is 16 x 16.
 // This function will also set the correct CSS layouts.
@@ -21,5 +19,25 @@ function createDivs(x = 16){
     }
 }
 
-createDivs();
+// Function to re-size the grid upon button click.
+function divSize(){
+    size = prompt("Enter size of the grid (0 - 90): ");
+
+    // Wipe the original grid.
+    while (container.firstChild){
+        container.removeChild(container.firstChild);
+    }
+
+    createDivs(size);
+}
+
+function main(){
+    createDivs();
+
+    // Event listeners
+    const btn_changeSize = document.querySelector("#btn_changeSize");
+    btn_changeSize.addEventListener('click', divSize);
+}
+
+main();
 
