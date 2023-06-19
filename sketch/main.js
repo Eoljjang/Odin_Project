@@ -12,8 +12,13 @@ function createDivs(x = 16){
 
         for (let j = 0; j < x; j++){
             const cell = document.createElement('div'); // 'td' = table data.
+            // Give the cell properties.
             cell.classList.add('cell');
-            cell.innerText = "cell";
+            cell.addEventListener('mouseover', () => {
+                cell.setAttribute('style', 'background-color:aqua;');
+            });
+            
+            //cell.innerText = "cell";
             row.appendChild(cell);
         }   
     }
@@ -21,7 +26,12 @@ function createDivs(x = 16){
 
 // Function to re-size the grid upon button click.
 function divSize(){
-    size = prompt("Enter size of the grid (0 - 90): ");
+    size = prompt("Enter size of the grid (0 - 19): ");
+
+    while (size > 19){
+        const invalid = size;
+        size = prompt(invalid + " is an invalid grid size. Input a valid number between 0 - 19.")
+    }
 
     // Wipe the original grid.
     while (container.firstChild){
