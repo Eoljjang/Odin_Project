@@ -1,6 +1,9 @@
+#title {
+    margin: 12px;
+}
+
 .body{
     min-height: 100vh;
-
 }
 
 .btn_nav {

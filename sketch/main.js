@@ -64,7 +64,7 @@ function changeColor(){
 function resetColor(){
     const allCells = Array.from(document.querySelectorAll('.cell'));
     allCells.forEach((cell) => {
-        cell.setAttribute('style', 'background-color: white');
+        cell.setAttribute('style', 'background-color: beige');
     });
     // for (let i = 0; i < allCells.length; i++){
     //     allCells[i].setAttribute('style', 'background-color:white');
