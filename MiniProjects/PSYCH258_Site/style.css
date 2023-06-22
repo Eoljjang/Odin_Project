@@ -5,8 +5,16 @@
 }
 
 body{
-    font-family:'Poppins', monospace;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center; /* For all text, very nice */
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
 }
 
 /* 1) Header box */
@@ -40,6 +48,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin: 12px;
     
 }
 
@@ -59,6 +68,45 @@ body{
 
 #nav .navItem a{ /* links */
     font-size: 14px;
-    text-decoration: none;
+}
+
+/* Info Sections */
+.infoSection{
+    text-align: left;
+    margin: 12px;
+}
+
+.infoSection ul li{
+    margin:15px 0;
+}
+
+
+/* 3) Where to get the textbook */
+#textbook{
+    text-align: left;
+    font-size: 18px;
+}
+
+#textbook ul li a{ /* links to textbooks */
+    color: blue;
+}
+
+/* 4) Textbook Erratas */
+#textbookErratas {
+    text-align: left;
+}
+
+/* 5) Ebook Erratas */
+#eBookErratas {
+    text-align:left;
+}
+
+
+/* 4) News & Updates Zone */
+#newsUpdates{
+    text-align: left;
+}
+#newsUpdates #newsTitle {
+    font-size: 24px;
 }
 
