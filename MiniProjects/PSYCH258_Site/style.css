@@ -7,10 +7,10 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center; /* For all text, very nice */
+    background:#eee;
 }
-
 a {
-    text-decoration: none;
+    color:#6880F9;
 }
 
 li {
@@ -49,7 +49,6 @@ li {
     align-items: center;
     justify-content: space-around;
     margin: 12px;
-    
 }
 
 #nav .navItem{ /* Each nav item's "box" */
@@ -80,33 +79,19 @@ li {
     margin:15px 0;
 }
 
-
-/* 3) Where to get the textbook */
-#textbook{
-    text-align: left;
-    font-size: 18px;
-}
-
-#textbook ul li a{ /* links to textbooks */
-    color: blue;
-}
-
-/* 4) Textbook Erratas */
-#textbookErratas {
-    text-align: left;
-}
-
-/* 5) Ebook Erratas */
-#eBookErratas {
-    text-align:left;
+/* Footer */
+#footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #AEAEAE;
 }
 
 
-/* 4) News & Updates Zone */
-#newsUpdates{
-    text-align: left;
-}
-#newsUpdates #newsTitle {
-    font-size: 24px;
-}
 
