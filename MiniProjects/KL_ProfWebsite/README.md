@@ -19,4 +19,5 @@ Other Changes:
 
 
 ## Preview
-* Click here to see preview of website: http://htmlpreview.github.io/?https://github.com/Eoljjang/Odin_Project/blob/main/MiniProjects/KL_ProfWebsite/index.html
+* Original website: https://sites.ualberta.ca/~kloepelm/index.html
+* Re-designed website: http://htmlpreview.github.io/?https://github.com/Eoljjang/Odin_Project/blob/main/MiniProjects/KL_ProfWebsite/index.html
