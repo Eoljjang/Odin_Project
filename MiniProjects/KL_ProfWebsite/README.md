@@ -6,6 +6,7 @@ Design Overhauls:
 * Content focused in center of screen.
 * Text is larger, easier to read, and easier to focus on. Important text "jumps out" more.
 * Profile picture is centered on the screen.
+* Contact information underneath pfp as icons. Clicking on them copies the relevant information with snackbar animation.
 
 Functional Changes:
 * All elements converted from in-line block to flexbox (allows for re-sizing & more device support).
