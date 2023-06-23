@@ -105,11 +105,25 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 52px;
+    height: fit-content;
     margin-top: 100px;
+    background: #2C3333;
+    padding: 10px;
+}
+
+#fImages {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #2C3333
+    justify-content: space-around;
+}
+
+#footer #fImages img {
+    width: 100px;
+    height: auto;
+}
+
+#footer div {
+    text-align: center;
+    color:#CBE4DE;
+    margin-top: 24px;
 }
