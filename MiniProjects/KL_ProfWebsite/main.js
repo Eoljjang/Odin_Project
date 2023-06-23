@@ -8,7 +8,8 @@ function copyToClipboard(icon){
     let email = 'kloepelm@ualberta.ca';
 
     if (icon === "phone"){
-        navigator.clipboard.writeText(phoneNumber)
+        if (navigator.clipboard){
+            navigator.clipboard.writeText(phoneNumber)
             // Sucessfully copies to clipboard.
             .then(function(){
                 showSnackBar();
@@ -18,6 +19,16 @@ function copyToClipboard(icon){
             .catch(function(error){
                 console.error("Failed to copy phone number.");
             })
+        }
+        else{
+            var tempInput = document.createElement("input");
+            tempInput.setAttribute("value", phoneNumber);
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+
     }
     else if (icon === "email"){
         navigator.clipboard.writeText(email)
