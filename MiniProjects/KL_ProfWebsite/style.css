@@ -11,7 +11,7 @@ body {
 }
 
 a {
-    color: #8deaff;
+    color: #55b5d9;
 }
 
 /* 1) Header */
@@ -43,13 +43,13 @@ a {
 #header #department{
     font-size: 22px;
     font-style: italic;
-    color: #8deaff;
+    color: #55b5d9;
 }
 
 #header #burgerBtn span{
     width: 30px;
     height: 5px;
-    background-color: #8deaff;
+    background-color: #55b5d9;
     display: block; /** Displayed to the right of the pull-out menu **/
     margin-top: 5px; /** Between each line **/
 }
@@ -78,6 +78,56 @@ a {
     clip-path: circle();
     margin-top: -160px;
 }
+
+#profile #infoContainer .icon{
+    width: 45px;
+    height: auto;
+    border-radius:20px;
+    margin: 10px;
+}
+
+/* 3.1) Snackbar notification */
+#snackbar{
+    visibility: hidden;
+    color: #222;
+    background-color: #55b5d9;
+    min-width: 200px;
+    margin-left: -125px; /* Makes it centered on screen */
+    border-radius: 20px;
+    padding: 16px;
+    text-align: center;
+    left: 50%;
+    bottom: 30px;
+    z-index: 999; /* Puts it on top of everything else */
+    position: fixed; /* Always shows it at the bottom of the screen */
+}
+/* This will be activated when the snackbar's class is 'show' which will be added through JS */
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  /* Animations for fading in and out */
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
 
 /* 4, 5) About me & awards */
 #aboutMe, #awards {
