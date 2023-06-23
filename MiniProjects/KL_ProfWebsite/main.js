@@ -20,15 +20,6 @@ function copyToClipboard(icon){
                 console.error("Failed to copy phone number.");
             })
         }
-        else{
-            showSnackBar();
-            var tempInput = document.createElement("input");
-            tempInput.setAttribute("value", phoneNumber);
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-        }
 
     }
     else if (icon === "email"){
