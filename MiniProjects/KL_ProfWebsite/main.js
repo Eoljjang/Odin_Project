@@ -27,6 +27,7 @@ function copyToClipboard(icon){
             tempInput.select();
             document.execCommand("copy");
             document.body.removeChild(tempInput);
+            showSnackBar();
         }
 
     }
