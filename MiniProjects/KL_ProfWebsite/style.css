@@ -131,6 +131,9 @@ a {
 
 /* 4, 5) About me & awards */
 #aboutMe, #awards {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     width: 700px;
     margin-top: 48px;
     color: rgb(189, 189, 189);
