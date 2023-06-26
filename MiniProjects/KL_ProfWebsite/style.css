@@ -7,11 +7,24 @@
 body {
     font-family: 'Varela Round';
     height: 100vh;
-    background: #222;
+    background: #EBEBEB; /* primary color */
 }
 
-a {
-    color: #55b5d9;
+.accent {
+    color: #829CD0;
+}
+
+.secondary{
+    background-color: #323232;
+}
+
+.headerTextColor{
+    /*color: rgb(189, 189, 189);*/
+    color: #EBEBEB;
+
+}
+.textColor{
+    color: #323232;
 }
 
 /* 1) Header */
@@ -19,11 +32,11 @@ a {
     display:flex;
     align-items: center;
     justify-content: center;
-    background-color: #2C3333;
     height: 200px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 110px;
+    border-bottom: 10px solid #829CD0;
 }
 
 #header #logo {
@@ -37,14 +50,12 @@ a {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: rgb(189, 189, 189);
     flex: 1;
 }
 
 #header #department{
     font-size: 22px;
     font-style: italic;
-    color: #55b5d9;
 }
 
 /* 2) Body */
@@ -62,7 +73,6 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color:rgb(189, 189, 189); /* text */
 }
 
 #profile #pfp {
@@ -74,7 +84,7 @@ a {
 }
 
 #profile #infoContainer .icon{
-    width: 45px;
+    width: 50px;
     height: auto;
     border-radius:20px;
     margin: 10px;
@@ -83,8 +93,9 @@ a {
 /* 3.1) Snackbar notification */
 #snackbar{
     visibility: hidden;
-    color: #222;
-    background-color: #55b5d9;
+    color: #323232;
+    background-color: #829CD0;
+    font-size:18px;
     min-width: 200px;
     margin-left: -125px; /* Makes it centered on screen */
     border-radius: 20px;
@@ -124,26 +135,25 @@ a {
   }
 
 /* 4, 5) About me & awards */
-#aboutMe, #awards {
+.textBlurb{
     display: flex;
     flex-direction: column;
-    max-width: 700px;
+    max-width: 700px; /* Setting this allows text to shrink */
     margin-top: 48px;
-    color: rgb(189, 189, 189);
-    border: 2px solid rgb(189, 189, 189);
+    margin-left: 10px; /* These are for if viewport is small */
+    margin-right: 10px;
+    border: 3px solid #323232;
     border-radius: 12px;
     padding: 24px;
-    
-}
-#aboutMe h1, #awards h1{
-    text-align: center;
-}
-
-.textBlurb{
     font-size:18px;
     line-height: 50px; /* Spacing between <p> lines */
     flex: 1;
     flex-wrap: wrap;
+    box-shadow: 5px 10px #323232;
+}
+
+#aboutMe h1, #awards h1{
+    text-align: center;
 }
 
 /* 6) Footer */
@@ -154,7 +164,6 @@ a {
     right: 0;
     height: fit-content;
     margin-top: 100px;
-    background: #2C3333;
     padding: 10px;
 }
 
@@ -171,6 +180,5 @@ a {
 
 #footer div {
     text-align: center;
-    color:rgb(189, 189, 189);
     margin-top: 24px;
 }
