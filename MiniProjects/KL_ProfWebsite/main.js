@@ -49,6 +49,8 @@ function main(){
     btnEmail.addEventListener("click", () => {
         copyToClipboard("email");
     })
+
+    console.log("the javascript file is lnked");
 }
 
 main();
