@@ -33,7 +33,7 @@ function copyToClipboard(icon){
             tempInput.select();
             document.execCommand("copy");
             document.body.removeChild(tempInput);
-            console.log("copied");
+            console.log("Copied phone number!");
         }
 
     }
@@ -56,7 +56,7 @@ function copyToClipboard(icon){
             tempInput.select();
             document.execCommand("copy");
             document.body.removeChild(tempInput);
-            console.log("copied #2");
+            console.log("copied email!");
         }
     }
 }
