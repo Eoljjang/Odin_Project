@@ -26,13 +26,14 @@ function copyToClipboard(icon){
             })
         }
         else{
+            showSnackBar();
             var tempInput = document.createElement("input");
             tempInput.setAttribute("value", phoneNumber);
             document.body.appendChild(tempInput);
             tempInput.select();
             document.execCommand("copy");
             document.body.removeChild(tempInput);
-            showSnackBar();
+            console.log("copied");
         }
 
     }
@@ -48,13 +49,14 @@ function copyToClipboard(icon){
             })
         }
         else{
+            showSnackBar();
             var tempInput = document.createElement("input");
             tempInput.setAttribute("value", email);
             document.body.appendChild(tempInput);
             tempInput.select();
             document.execCommand("copy");
             document.body.removeChild(tempInput);
-            showSnackBar();
+            console.log("copied #2");
         }
     }
 }
