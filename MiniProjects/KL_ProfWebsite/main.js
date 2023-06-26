@@ -67,11 +67,6 @@ function showSnackBar(){
         notif.className = notif.className.replace("show", "");}, 3000);
 }
 
-function showSidebar(){
-    const sidebar = document.querySelector("#sidebar");
-    sidebar.classList.toggle("active"); // Changes state of sidebar to "active" if not, otherwise deactivates.
-}
-
 function main(){
     console.log("the javascript file is lnked");
 
@@ -82,10 +77,7 @@ function main(){
     btnEmail.addEventListener("click", () => {
         copyToClipboard("email");
     })
-    
-    burgerBtn.addEventListener("click", showSidebar);
 
-    
 }
 
 main();
