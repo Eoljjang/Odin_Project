@@ -109,7 +109,7 @@ a {
   }
   
   /* Animations for fading in and out */
-  @-webkit-keyframes fadein {
+  @keyframes fadein {
     from {bottom: 0; opacity: 0;}
     to {bottom: 30px; opacity: 1;}
   }
@@ -119,7 +119,7 @@ a {
     to {bottom: 30px; opacity: 1;}
   }
   
-  @-webkit-keyframes fadeout {
+  @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
