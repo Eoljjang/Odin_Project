@@ -1,6 +1,7 @@
 // Global Variables
 const btnPhone = document.querySelector("#phone");
 const btnEmail = document.querySelector("#email");
+const burgerBtn = document.querySelector("#burgerBtn");
 
 // Function that copies phone / email to clipboard upon click.
 function copyToClipboard(icon){
@@ -49,6 +50,7 @@ function main(){
     btnEmail.addEventListener("click", () => {
         copyToClipboard("email");
     })
+    burgerBtn.addEventListener("click", showSnackBar);
 
     console.log("the javascript file is lnked");
 }
