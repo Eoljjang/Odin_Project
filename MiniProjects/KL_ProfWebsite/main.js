@@ -3,7 +3,6 @@ const btnPhone = document.querySelector("#phone");
 const btnEmail = document.querySelector("#email");
 const burgerBtn = document.querySelector("#burgerBtn");
 
-// Function that copies phone / email to clipboard upon click.
 function copyToClipboard(icon){
     let phoneNumber = 7804927157;
     let email = 'kloepelm@ualberta.ca';
@@ -68,7 +67,14 @@ function showSnackBar(){
         notif.className = notif.className.replace("show", "");}, 3000);
 }
 
+function showSidebar(){
+    const sidebar = document.querySelector("#sidebar");
+    sidebar.classList.toggle("active"); // Changes state of sidebar to "active" if not, otherwise deactivates.
+}
+
 function main(){
+    console.log("the javascript file is lnked");
+
     // Click listeners
     btnPhone.addEventListener("click", () =>{
         copyToClipboard("phone");
@@ -76,9 +82,10 @@ function main(){
     btnEmail.addEventListener("click", () => {
         copyToClipboard("email");
     })
-    burgerBtn.addEventListener("click", showSnackBar);
+    
+    burgerBtn.addEventListener("click", showSidebar);
 
-    console.log("the javascript file is lnked");
+    
 }
 
 main();
