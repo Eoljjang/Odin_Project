@@ -140,7 +140,7 @@ body {
 .textBlurb{
     display: flex;
     flex-direction: column;
-    max-width: 700px; /* Setting this allows text to shrink */
+    max-width: 800px; /* Setting this allows text to shrink */
     margin-top: 48px;
     margin-left: 10px; /* These are for if viewport is small */
     margin-right: 10px;
@@ -148,7 +148,7 @@ body {
     border-radius: 12px;
     padding: 24px;
     font-size:18px;
-    line-height: 50px; /* Spacing between <p> lines */
+    line-height: 45px; /* Spacing between <p> lines */
     flex: 1;
     flex-wrap: wrap;
     box-shadow: 5px 10px #323232;
@@ -156,6 +156,10 @@ body {
 
 #aboutMe h1, #awards h1{
     text-align: center;
+}
+
+#awards li{
+    margin-left: 15px;
 }
 
 /* 6) Footer */
