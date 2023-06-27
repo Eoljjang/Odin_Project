@@ -182,6 +182,7 @@ body {
 #footer #fImages img {
     max-width: 100px;
     width: 100px;
+    flex: 1;
     height: auto;
 }
 
