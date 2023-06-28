@@ -78,7 +78,7 @@ body {
 }
 
 #profile #pfp {
-    max-width: 80%;
+    width: 220px;
     height: auto;
     clip-path: circle();
     margin-top: -150px;
