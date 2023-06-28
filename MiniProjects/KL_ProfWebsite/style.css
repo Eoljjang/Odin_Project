@@ -83,7 +83,6 @@ body {
     height: auto;
     clip-path: circle();
     margin-top: -150px;
-    flex: 1;
 }
 
 @media (max-width: 540px){ /* on veiwports 540px wide or less, adjusts alignment */
