@@ -121,22 +121,12 @@ body {
     to {bottom: 30px; opacity: 1;}
   }
   
-  @keyframes fadein {
-    from {bottom: 0; opacity: 0;}
-    to {bottom: 30px; opacity: 1;}
-  }
-  
-  @keyframes fadeout {
-    from {bottom: 30px; opacity: 1;}
-    to {bottom: 0; opacity: 0;}
-  }
-  
   @keyframes fadeout {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
 
-/* 4, 5) About me & awards */
+/* 4) Text Blurbs */
 .textBlurb{
     display: flex;
     flex-direction: column;
@@ -160,6 +150,71 @@ body {
 
 #awards li{
     margin-left: 15px;
+}
+
+#moreLinks{
+    text-align: center;
+}
+
+#moreLinks_1, #moreLinks_2{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    gap: 12px;
+}
+
+.btnBlurb{
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    max-width: 800px;
+    margin-top: 24px;
+    margin-left: 10px; 
+    margin-right: 10px;
+    border: 3px solid #323232;
+    border-radius: 12px;
+    padding: 24px;
+    font-size:18px;
+    flex: 1;
+    flex-wrap: wrap;
+    line-height: 25px;
+    
+} 
+
+.btnBlurb:hover{
+    box-shadow: 3px 3px #323232;
+    transition: 0.5s ease;
+}
+
+button { /* flexed just so text can be centered properly */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Colors for button links */
+#moreLinks_1 > :nth-child(1){
+    background-color: #FFE1E9;
+}
+
+#moreLinks_1 > :nth-child(2){
+    background-color: #B5EAD6;
+}
+
+#moreLinks_1 > :nth-child(3){
+    background-color: #A3E1DC;
+}
+
+#moreLinks_2 > :nth-child(1){
+    background-color: #F6EAC2;
+}
+
+#moreLinks_2 > :nth-child(2){
+    background-color: #DFCCF1;
+}
+
+#moreLinks_2 > :nth-child(3){
+    background-color: #FFD8CC;
 }
 
 /* 6) Footer */
