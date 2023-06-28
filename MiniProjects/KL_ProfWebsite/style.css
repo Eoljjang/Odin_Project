@@ -238,7 +238,7 @@ button { /* flexed just so text can be centered properly */
 }
 
 #footer #fImages img {
-    width: 100px;
+    max-width: 80px;
     height: auto;
 }
 
