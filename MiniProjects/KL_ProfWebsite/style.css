@@ -125,8 +125,6 @@ body {
 .textBlurb{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 800px; /* Setting this allows text to shrink */
     margin-top: 30px;
     margin-left: 10px; /* These are for if viewport is small */
