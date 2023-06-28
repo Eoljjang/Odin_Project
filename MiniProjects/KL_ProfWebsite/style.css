@@ -3,48 +3,40 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Varela Round';
     height: 100vh;
     background: #EBEBEB; /* primary color */
 }
-
 .accent {
     color: #829CD0;
 }
-
 .secondary{
     background-color: #323232;
 }
-
 .headerTextColor{
     /*color: rgb(189, 189, 189);*/
     color: #EBEBEB;
-
 }
 .textColor{
     color: #323232;
 }
-
 /* 1) Header */
 #header{
     display:flex;
     align-items: center;
     justify-content: center;
     height: 200px;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 110px;
     border-bottom: 10px solid #829CD0;
 }
-
 #header #logo {
     width: 50px;
     height: 50px;
 }
-
 #header #title {
     font-size: 48px;
     display:flex;
@@ -53,12 +45,10 @@ body {
     flex-direction: column;
     flex: 1;
 }
-
 #header #department{
     font-size: 22px;
     font-style: italic;
 }
-
 /* 2) Body */
 #content{
     display:flex;
@@ -66,8 +56,6 @@ body {
     align-items: center;
     justify-content: center;
 }
-
-
 /* 3) Profile */
 #profile {
     display: flex;
@@ -76,28 +64,19 @@ body {
     justify-content: center;
     flex: 1;
 }
-
 #profile #pfp {
     width: 220px;
     max-width: 100%;
     height: auto;
     clip-path: circle();
-    margin-top: -150px;
+    margin-top: -160px;
 }
-
-@media (max-width: 540px){ /* on veiwports 540px wide or less, adjusts alignment */
-    #profile #pfp {
-        margin-top: -140px;
-    }
-}
-
 #profile #infoContainer .icon{
     width: 50px;
     height: auto;
     border-radius:20px;
     margin: 10px;
 }
-
 /* 3.1) Snackbar notification */
 #snackbar{
     visibility: hidden;
@@ -131,7 +110,6 @@ body {
     from {bottom: 30px; opacity: 1;}
     to {bottom: 0; opacity: 0;}
   }
-
 /* 4) Text Blurbs */
 .textBlurb{
     display: flex;
@@ -149,26 +127,21 @@ body {
     flex-wrap: wrap;
     box-shadow: 5px 10px #323232;
 }
-
 #aboutMe h1, #awards h1{
     text-align: center;
 }
-
 #awards li{
     margin-left: 15px;
 }
-
 #moreLinks{
     text-align: center;
 }
-
 #moreLinks_1, #moreLinks_2{
     display: flex;
     flex-wrap: wrap;
     flex: 1;
     gap: 12px;
 }
-
 .btnBlurb{
     display: flex;
     flex-direction: column;
@@ -184,48 +157,37 @@ body {
     flex: 1;
     flex-wrap: wrap;
     line-height: 25px;
-
     /* Animation */
     transition: 0.5s;
 } 
-
 .btnBlurb:hover{
     box-shadow: 3px 3px #323232;
     transition: 0.5s;
-
 }
-
 button { /* flexed just so text can be centered properly */
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 /* Colors for button links */
 #moreLinks_1 > :nth-child(1){
     background-color: #FFE1E9;
 }
-
 #moreLinks_1 > :nth-child(2){
     background-color: #B5EAD6;
 }
-
 #moreLinks_1 > :nth-child(3){
     background-color: #A3E1DC;
 }
-
 #moreLinks_2 > :nth-child(1){
     background-color: #F6EAC2;
 }
-
 #moreLinks_2 > :nth-child(2){
     background-color: #DFCCF1;
 }
-
 #moreLinks_2 > :nth-child(3){
     background-color: #FFD8CC;
 }
-
 /* 6) Footer */
 #footer {
     position: relative;
@@ -236,7 +198,6 @@ button { /* flexed just so text can be centered properly */
     margin-top: 100px;
     padding: 10px;
 }
-
 #fImages {
     display: flex;
     align-items: center;
