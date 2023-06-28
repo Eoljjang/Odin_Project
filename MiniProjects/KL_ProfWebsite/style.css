@@ -75,8 +75,9 @@ body {
     width: 220px;
     max-width: 100%;
     height: auto;
-    margin-top: -160px;
+    margin-top: -120px;
     clip-path: circle();
+    border: 3px solid white;
 }
 
 #profile #infoContainer .icon{
@@ -84,6 +85,8 @@ body {
     height: auto;
     border-radius:20px;
     margin: 10px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 }
 /* 3.1) Snackbar notification */
 #snackbar{
@@ -125,9 +128,10 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 800px; /* Setting this allows text to shrink */
-    margin-top: 48px;
+    margin-top: 30px;
     margin-left: 10px; /* These are for if viewport is small */
     margin-right: 10px;
+    margin-bottom: 48px;
     border: 3px solid #323232;
     border-radius: 12px;
     padding: 24px;
@@ -219,6 +223,10 @@ button { /* flexed just so text can be centered properly */
     height: auto;
 }
 
+#footerText{
+    font-size: 14px;
+}
+
 #footer div {
     text-align: center;
     margin-top: 24px;
@@ -230,7 +238,7 @@ button { /* flexed just so text can be centered properly */
     #profile #pfp {
         width: 180px;
         max-width: 100%;
-        margin-top: -120px;
+        margin-top: -100px;
     }
 
     /* Smaller icons */

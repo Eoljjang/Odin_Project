@@ -1,11 +1,12 @@
 // Global Variables
 const btnPhone = document.querySelector("#phone");
 const btnEmail = document.querySelector("#email");
-const burgerBtn = document.querySelector("#burgerBtn");
+const devEmail = document.querySelector("#devEmail");
 
 function copyToClipboard(icon){
     let phoneNumber = 7804927157;
     let email = 'kloepelm@ualberta.ca';
+    let devEmail = 'ncw1@ualberta.ca';
 
     // 1) Check if icon is the phone or email.
     // 2) Check if browser is "inSecureContext". Then you can use the navigator clipboard method.
@@ -58,6 +59,29 @@ function copyToClipboard(icon){
             console.log("copied email!");
         }
     }
+    // Dev email (mine)
+    else if (icon === "devEmail"){
+        if (navigator.clipboard && window.isSecureContext){
+            navigator.clipboard.writeText(devEmail)
+            .then(function(){
+                showSnackBar();
+                console.log("Email copied to clipboard.");
+            })
+            .catch(function(error){
+                console.error("Failed to copy email.");
+            })
+        }
+        else{
+            showSnackBar();
+            var tempInput = document.createElement("input");
+            tempInput.setAttribute("value", devEmail);
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            console.log("copied email!");
+        }
+    }
 }
 
 function showSnackBar(){
@@ -76,6 +100,9 @@ function main(){
     });
     btnEmail.addEventListener("click", () => {
         copyToClipboard("email");
+    })
+    devEmail.addEventListener("click", () => {
+        copyToClipboard("devEmail");
     })
 
 }
