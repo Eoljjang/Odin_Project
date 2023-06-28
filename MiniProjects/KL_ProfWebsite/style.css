@@ -75,9 +75,10 @@ body {
     width: 220px;
     max-width: 100%;
     height: auto;
-    clip-path: circle();
     margin-top: -160px;
+    clip-path: circle();
 }
+
 #profile #infoContainer .icon{
     width: 50px;
     height: auto;
@@ -121,6 +122,8 @@ body {
 .textBlurb{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 800px; /* Setting this allows text to shrink */
     margin-top: 48px;
     margin-left: 10px; /* These are for if viewport is small */
@@ -219,4 +222,33 @@ button { /* flexed just so text can be centered properly */
 #footer div {
     text-align: center;
     margin-top: 24px;
+}
+
+/* MOBILE SUPPORT: If viewport is < 531px */
+@media (max-width: 530px){
+    /* PFP is adjusted for alignment */
+    #profile #pfp {
+        width: 180px;
+        max-width: 100%;
+        margin-top: -120px;
+    }
+
+    /* Smaller icons */
+    .icon{
+        width: 40px;
+    }
+
+    /* Textblurbs are smaller for less scrolling */
+    .textBlurb{
+        font-size: 14px;
+        line-height: 30px;
+    }
+    #aboutMe h1, #awards h1{
+        margin-bottom: 15px;
+    }
+
+    .btnBlurb{
+        height: 60px;
+    }
+
 }
