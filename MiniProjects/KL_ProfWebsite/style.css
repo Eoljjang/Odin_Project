@@ -178,12 +178,15 @@ body {
     flex: 1;
     flex-wrap: wrap;
     line-height: 25px;
-    
+
+    /* Animation */
+    transition: 0.5s;
 } 
 
 .btnBlurb:hover{
     box-shadow: 3px 3px #323232;
-    transition: 0.5s ease;
+    transition: 0.5s;
+
 }
 
 button { /* flexed just so text can be centered properly */
