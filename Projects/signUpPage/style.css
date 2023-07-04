@@ -1,10 +1,103 @@
-@import url('https://fonts.googleapis.com/css?family=Varela Round');
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
 
 * {
     margin: 0;
     padding: 0;
 }
 body {
-    font-family: 'Varela Round';
+    font-family: "Roboto Mono";
     height: 100vh;
+    display: flex;
+}
+
+a{
+    color: blue;
+}
+
+/* Background */
+#bgImg{
+    height: 100vh;
+}
+
+/* Content */
+.content {
+    width: 100vw;
+    background-color:#e0e0eb;
+    border-left: 5px solid #888888;
+}
+
+.header {
+    margin: 30px;
+    max-width: 700px; /* I don't want text to extend too long */
+    /* Get text to wrap;
+    width: calc(50vw);
+    max-width: 50%;
+    */
+}
+#hook{
+    margin-top:30px;
+}
+
+/* Form */
+
+form{
+    background-color: #f0f0f5;
+    height: fit-content;
+    display:flex;
+}
+
+form .input-box{
+    display:flex;
+    flex-direction: column;
+}
+
+#col1, #col2{
+    margin: 20px 30px 20px 30px;
+
+}
+
+.input-box{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.input-box .details{
+    margin-bottom: 10px;
+}
+
+input[type='text'] {
+    font-family: inherit;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 3px solid #e0e0eb;
+    outline: none;
+    
+}
+
+input[type='text']:focus{
+    border: 3px solid #80aaff;
+}
+
+
+/* Extra */
+.extra{
+    margin: 20px 0 0 30px;
+}
+
+#createBtn,
+#alreadyHave {
+    font-family: inherit;
+}
+
+#createBtn {
+    background-color: #b5e3c3;
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 3px solid #b5e3c3;
+    box-shadow: 5px 5px #888888;
+
+    cursor: pointer;
 }
