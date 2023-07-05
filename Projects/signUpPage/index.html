@@ -22,51 +22,49 @@
             <h1 id="title">Lets do this.</h1>
         </div>
         
-        
-
-        <form action="" method="">
-        
+        <form action="" method="" id="signupForm">
             <div id="col1">
                 <div class="input-box">
-                    <span class="details">First Name:</span>
-                    <input type="text">
+                    <span class="details">First Name: *</span>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Last Name: *</span>
+                    <input type="text" id="lastName" required>
+
                 </div>
                 <div class="input-box">
                     <span class="details">Email:</span>
-                    <input type="text">
-                </div>
-                <div class="input-box">
-                    <span class="details">Password:</span>
-                    <input type="text">
+                    <input type="text" id="email">
+
                 </div>
             </div>
 
             <div id="col2">
                 <div class="input-box">
-                    <span class="details">Last Name:</span>
-                    <input type="text">
-                </div>
-                <div class="input-box">
                     <span class="details">Phone Number:</span>
-                    <input type="text">
+                    <input type="number" id="phoneNumber">
                 </div>
                 <div class="input-box">
-                    <span class="details">Confirm Password:</span>
-                    <input type="text">
+                    <span class="details">Password: *</span>
+                    <input type="password" id='password' required>
                 </div>
-            </div>               
+                <div class="input-box">
+                    <span class="details">Confirm Password: *</span>
+                    <input type="password" id="confirmPassword" required>
+                </div>
+            </div>    
+            <span id="snackbar-invalid">Passwords do not match!</span>           
         </form>
 
             <!-- Extra items -->
         <div class="extra">
-            <button id="createBtn">Create Account</button> <!-- Remember to link this button to the form. -->
+            <input type="submit" form="signupForm" value="Create Account" id="createBtn"> <!-- This is the "Create account" button (can be used outside of form)-->
             <div id="alreadyHave">Already have an account? <a href="">Log In</a></div>
         </div>
+        <span id="snackbar">Account Created!</span>
+        
     </div>
 
-
-
-
-    
 </body>
 </html>
