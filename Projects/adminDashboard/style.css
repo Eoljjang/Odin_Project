@@ -9,6 +9,7 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 18px;
 }
 
 .grid-container{
@@ -37,7 +38,30 @@ body {
 .sidebar {
     background-color: green;
     grid-area: sidebar;
+    padding: 2rem;
+    position: relative;
 }
+
+.sidebar .nav {
+    list-style-type: none;
+    line-height: 3rem;
+}
+
+.sidebar .settings {
+    position: absolute;
+    bottom: 0;
+    line-height: 3rem;
+    list-style-type: none;
+    margin-bottom: 2rem; /* Same as sidebar padding */
+}
+
+
+
+
+
+
+
+
 
 .content {
     display: grid; /* This is a nested grid */
