@@ -17,7 +17,7 @@ body {
     min-width: 100%;
     height: 100vh; /* Stretches to bottom of viewport */
     grid-template-columns: 250px 1fr; /* Sidebar is 300px, remaining space is taken up */
-    grid-template-rows: 50px 50px 1fr 50px; /* header / action / content (remaining space) / footer */
+    grid-template-rows: 50px 100px 1fr 50px; /* header / action / content (remaining space) / footer */
     grid-template-areas:
         "sidebar header"
         "sidebar action-tab"
@@ -28,11 +28,14 @@ body {
 .header {
     background-color: aqua;
     grid-area: header;
+    padding: 1rem;
+    padding-left: 2.5rem;
 }
 
 .action-tab {
     background-color: pink;
     grid-area: action-tab;
+    padding: 2.5rem;
 }
 
 .sidebar {
@@ -55,22 +58,16 @@ body {
     margin-bottom: 2rem; /* Same as sidebar padding */
 }
 
-
-
-
-
-
-
-
-
 .content {
     display: grid; /* This is a nested grid */
     grid-area: content;
     grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .project-cards { /* These are grid items of 'content' */
     background-color: teal;
+    grid-row: 1/-1;
 }
 
 .news { /* These are grid items of 'content' */
