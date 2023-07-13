@@ -70,19 +70,39 @@ body {
     background-color: teal;
     grid-row: 1/-1;
     display: grid; /* For the card items */
-    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
     grid-template-rows: auto;
     justify-content: space-evenly;
     row-gap: 25px;
 }
 
-.card{
+.content .card{
     border: 3px solid white;
+    min-height: 100px;
 }
 
 
 .news { /* These are grid items of 'content' */
     background-color: aquamarine;
+    padding: 1rem;
+}
+
+#newsCard{
+    border: 3px solid black;
+    height: 85%; /* Of the ".news" section */
+    min-height: 150px;
+    margin-top: 0.5rem;
+}
+
+.trending{
+    padding: 1rem;
+}
+
+#trendingCard{
+    border: 3px solid black;
+    height: 85%;
+    min-height: 150px;
+    margin-top: 0.5rem;
 }
 
 .footer{
