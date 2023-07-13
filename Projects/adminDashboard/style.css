@@ -67,7 +67,7 @@ body {
 
 .header #search {
     border-radius: 20px;
-    border: 2px solid lightgray;
+    border: 1px solid var(--shadow-color);
     width: 30rem;
     padding: 0.5rem;
 
@@ -94,12 +94,18 @@ body {
     height: auto;
 }
 
+.greeting #message {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .actionBtns{
     display: flex;
     gap: 3rem;
 }
 
 .actionBtns button {
+    background-color: var(--sidebar-color);
     padding: 12px;
     border-radius: 50px;
     width: 5rem;
@@ -153,18 +159,17 @@ body {
     border-left: 8px solid var(--card-accent);
 
     /* Styling */
-    padding: 10px;
+    padding: 20px 15px 20px 15px;
 }
 
-
-.news { /* These are grid items of 'content' */
-    background-color:var(--content-color);
-    padding: 1rem;
+.cardTitle{
+    font-weight: bolder;
+    font-size: 20px;
 }
 
-.trending{
-    background-color: var(--content-color);;
-    padding: 1rem;
+.cardContent {
+    font-size: 16px;
+    color: var(--shadow-color);
 }
 
 .sideCard{ /* News & trending */
@@ -176,9 +181,28 @@ body {
     margin-top: 0.5rem;
 
     /* Styling */
-    padding: 10px;
-
+    padding: 15px;
 }
+
+.announcements { /* These are grid items of 'content' */
+    background-color:var(--content-color);
+    padding: 1rem;
+}
+
+.announcements .cardContent {
+    font-size: 14px;
+    border-bottom: 2px solid black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.friends{
+    background-color: var(--content-color);;
+    padding: 1rem;
+    line-height: 2.5rem;
+}
+
+
 
 .footer{
     background-color: var(--footer-color);
