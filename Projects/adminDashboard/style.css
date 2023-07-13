@@ -66,9 +66,20 @@ body {
 }
 
 .project-cards { /* These are grid items of 'content' */
+    padding: 2rem;
     background-color: teal;
     grid-row: 1/-1;
+    display: grid; /* For the card items */
+    grid-template-columns: repeat(auto-fit, 350px);
+    grid-template-rows: auto;
+    justify-content: space-evenly;
+    row-gap: 25px;
 }
+
+.card{
+    border: 3px solid white;
+}
+
 
 .news { /* These are grid items of 'content' */
     background-color: aquamarine;
