@@ -12,6 +12,15 @@ body {
     font-size: 18px;
 }
 
+:root{ /* Variables for colors */
+    --bg-color: #e0e0eb;
+    --form-color: #f0f0f5;
+    --accent-green: #b5e3c3;
+    --accent-gray: #888888;
+    --accent-blue: #80aaff;
+    --accent-red: #ff9999;
+}
+
 .icon {
     width: 1.5rem;
     height: auto;
@@ -44,6 +53,14 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
+}
+
+.header #search {
+    border-radius: 20px;
+    border: 2px solid lightgray;
+    width: 30rem;
+    padding: 0.5rem;
+
 }
 
 .action-tab {
