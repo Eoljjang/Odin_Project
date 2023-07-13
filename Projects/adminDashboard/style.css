@@ -13,12 +13,10 @@ body {
 }
 
 :root{ /* Variables for colors */
-    --bg-color: #e0e0eb;
-    --form-color: #f0f0f5;
-    --accent-green: #b5e3c3;
-    --accent-gray: #888888;
-    --accent-blue: #80aaff;
-    --accent-red: #ff9999;
+    --header-color: #f8fafc;
+    --content-color: #94a3b8;
+    --sidebar-color: #06b6d4;
+    --footer-color: #475569;
 }
 
 .icon {
@@ -40,7 +38,7 @@ body {
 }
 
 .header {
-    background-color: aqua;
+    background-color: var(--header-color);
     grid-area: header;
     padding: 1rem;
     padding-left: 2.5rem;
@@ -64,7 +62,7 @@ body {
 }
 
 .action-tab {
-    background-color: pink;
+    background-color: var(--header-color);
     grid-area: action-tab;
     padding: 2.5rem;
     display: flex;
@@ -97,7 +95,7 @@ body {
 }
 
 .sidebar {
-    background-color: green;
+    background-color: var(--sidebar-color);
     grid-area: sidebar;
     padding: 2rem;
     position: relative;
@@ -125,7 +123,7 @@ body {
 
 .project-cards { /* These are grid items of 'content' */
     padding: 2rem;
-    background-color: teal;
+    background-color: var(--content-color);
     grid-row: 1/-1;
     display: grid; /* For the card items */
     grid-template-columns: repeat(auto-fit, minmax(100px, 350px));
@@ -141,7 +139,7 @@ body {
 
 
 .news { /* These are grid items of 'content' */
-    background-color: aquamarine;
+    background-color:var(--content-color);
     padding: 1rem;
 }
 
@@ -153,6 +151,7 @@ body {
 }
 
 .trending{
+    background-color: var(--content-color);;
     padding: 1rem;
 }
 
@@ -164,7 +163,7 @@ body {
 }
 
 .footer{
-    background-color: purple;
+    background-color: var(--footer-color);
     grid-area: footer;
 
 }
