@@ -13,7 +13,7 @@ body {
 }
 
 .icon {
-    width: 75px;
+    width: 3rem;
     height: auto;
 }
 
@@ -54,6 +54,8 @@ body {
 
 .greeting img {
     padding-right: 2rem;
+    width: 5rem; /* Default icon size will be 50px, but for this specific one I'm changing it to 75. */
+    height: auto;
 }
 
 .actionBtns{
