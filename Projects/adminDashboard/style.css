@@ -15,7 +15,7 @@ body {
 :root{ /* Variables for colors */
     --header-color: #f8fafc;
     --content-color: #94a3b8;
-    --sidebar-color: #06b6d4;
+    --sidebar-color: #7dd3fc;
     --footer-color: #475569;
 }
 
@@ -29,7 +29,7 @@ body {
     min-width: 100%;
     height: 100vh; /* Stretches to bottom of viewport */
     grid-template-columns: 250px 1fr; /* Sidebar is 300px, remaining space is taken up */
-    grid-template-rows: 50px 100px 1fr 50px; /* header / action / content (remaining space) / footer */
+    grid-template-rows: 75px 80px 1fr 50px; /* header / action / content (remaining space) / footer */
     grid-template-areas:
         "sidebar header"
         "sidebar action-tab"
@@ -42,6 +42,7 @@ body {
     grid-area: header;
     padding: 1rem;
     padding-left: 2.5rem;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +79,7 @@ body {
 
 .greeting img {
     padding-right: 2rem;
-    width: 5rem; /* Default icon size will be 50px, but for this specific one I'm changing it to 75. */
+    width: 4rem; /* Default icon size will be 50px, but for this specific one I'm changing it to 75. */
     height: auto;
 }
 
