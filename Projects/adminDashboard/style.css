@@ -13,7 +13,7 @@ body {
 }
 
 .icon {
-    width: 3rem;
+    width: 1.5rem;
     height: auto;
 }
 
@@ -35,6 +35,15 @@ body {
     grid-area: header;
     padding: 1rem;
     padding-left: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .action-tab {
