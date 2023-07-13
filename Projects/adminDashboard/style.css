@@ -14,9 +14,11 @@ body {
 
 :root{ /* Variables for colors */
     --header-color: #f8fafc;
-    --content-color: #94a3b8;
+    --content-color: #cbd5e1;
     --sidebar-color: #7dd3fc;
     --footer-color: #475569;
+    --shadow-color: #525252;
+    --card-accent: #818cf8;
 }
 
 .icon {
@@ -144,8 +146,14 @@ body {
 }
 
 .content .card{
-    border: 3px solid white;
+    background-color: var(--header-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow-color) 2px 2px 2.5px;
     min-height: 100px;
+    border-left: 8px solid var(--card-accent);
+
+    /* Styling */
+    padding: 10px;
 }
 
 
@@ -154,23 +162,22 @@ body {
     padding: 1rem;
 }
 
-#newsCard{
-    border: 3px solid black;
-    height: 85%; /* Of the ".news" section */
-    min-height: 150px;
-    margin-top: 0.5rem;
-}
-
 .trending{
     background-color: var(--content-color);;
     padding: 1rem;
 }
 
-#trendingCard{
-    border: 3px solid black;
-    height: 85%;
+.sideCard{ /* News & trending */
+    background-color: var(--header-color);
+    border-radius: 10px;
+    box-shadow: var(--shadow-color) 2px 2px 2.5px;
+    height: 85%; /* Of the ".news" section */
     min-height: 150px;
     margin-top: 0.5rem;
+
+    /* Styling */
+    padding: 10px;
+
 }
 
 .footer{
