@@ -37,6 +37,15 @@ body {
         "sidebar footer";
 }
 
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    font-size: 28px;
+    font-weight: bold;
+}
+
 .header {
     background-color: var(--header-color);
     grid-area: header;
@@ -99,12 +108,13 @@ body {
     background-color: var(--sidebar-color);
     grid-area: sidebar;
     padding: 2rem;
+    padding-top: 1rem;
     position: relative;
 }
 
 .sidebar .nav {
     list-style-type: none;
-    line-height: 3rem;
+    line-height: 3.5rem;
 }
 
 .sidebar .settings {
