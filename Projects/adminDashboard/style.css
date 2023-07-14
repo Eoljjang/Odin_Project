@@ -67,10 +67,14 @@ body {
 
 .header #search {
     border-radius: 20px;
-    border: 1px solid var(--shadow-color);
+    border: 2px solid var(--shadow-color);
     width: 30rem;
     padding: 0.5rem;
+}
 
+.header #search:focus{
+    outline: none;
+    border: 2px solid var(--card-accent);
 }
 
 .action-tab {
