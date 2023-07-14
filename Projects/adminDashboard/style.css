@@ -206,7 +206,7 @@ body {
 
 .announcements .cardContent {
     font-size: 14px;
-    border-bottom: 2px solid var(--content-color);
+    border-bottom: 1.5px solid var(--content-color);
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
